@@ -2,6 +2,10 @@ name: Run CI checks
 
 on: [pull_request]
 
+env:
+  NX_CLOUD_DISTRIBUTED_EXECUTION: true
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
