@@ -15,6 +15,8 @@ import { formatRating } from '@bg-hoard/store/util-formatters';
 import { Route, Link } from 'react-router-dom';
 import { StoreFeatureGameDetail } from '@bg-hoard/store/feature-game-detail';
 
+
+const title = "Board Game Hoard"
 export const App = () => {
   const [state, setState] = useState<{
     data: Game[];
@@ -48,7 +50,7 @@ export const App = () => {
 
   return (
     <>
-      <Header title="Board Game Hoard" />
+      <Header title={title} />
       <div className={styles.container}>
         <div className={styles['games-layout']}>
           {state.loadingState === 'loading'
