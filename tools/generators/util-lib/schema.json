@@ -14,22 +14,26 @@
     },
     "directory": {
       "type": "string",
-    "description": "The directory",
+      "description": "The directory",
       "x-prompt": {
         "message": "Which destination does this belong to",
         "type": "list",
         "items": [
           {
-            "value": "store",
-            "label": "Store"
+            "value": "api",
+            "label": "api"
           },
           {
-            "value": "api",
-            "label": "API"
+            "value": "store",
+            "label": "store"
           },
           {
             "value": "shared",
-            "label": "Shared"
+            "label": "shared"
+          },
+          {
+            "value": "vide-games",
+            "label": "vide-games"
           }
         ]
       }
