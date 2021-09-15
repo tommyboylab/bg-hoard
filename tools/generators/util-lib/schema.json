@@ -11,6 +11,28 @@
         "$source": "argv",
         "index": 0
       }
+    },
+    "directory": {
+      "type": "string",
+    "description": "The directory",
+      "x-prompt": {
+        "message": "Which destination does this belong to",
+        "type": "list",
+        "items": [
+          {
+            "value": "store",
+            "label": "Store"
+          },
+          {
+            "value": "api",
+            "label": "API"
+          },
+          {
+            "value": "shared",
+            "label": "Shared"
+          }
+        ]
+      }
     }
   },
   "required": ["name"]
